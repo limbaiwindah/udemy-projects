@@ -1,0 +1,54 @@
+/* Image won't stretch */
+.movie-entry img {
+    width: 350px;
+    height: auto;
+    /* 🔥 Keeps the aspect ratio */
+    max-height: 500px;
+    /* Optional: keeps images the same height */
+    flex-shrink: 0;
+    /* 🚫 Prevent shrinking when space is tight */
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.movie-entry {
+    display: flex;
+    align-items: center;
+    /* 🎯 Vertically center items */
+    gap: 10px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+}
+
+.text-content {
+    max-width: 600px;
+}
+
+p {
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h2 {
+    color: rgb(88, 88, 47);
+}
+
+hr {
+    margin-bottom: 30px;
+}
+
+.comment {
+  text-align: center;
+  opacity: 70%;
+  margin-top: 70px;
+
+}

@@ -1,0 +1,170 @@
+
+
+/* general styles */
+
+body {
+    margin: 5px;
+}
+
+p {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+hr {
+    border: 1.5px solid rgba(169, 169, 169, 0.25);/* Grey with 50% transparency */
+}
+ 
+a {
+    color: #307b8e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #609bc9;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+a:visited {
+    color: #9a9a9a;
+}
+
+a:active {
+    color: #c71585;
+}
+
+/* index.html */
+.headline {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5.5em;
+    text-align: center;
+    color: rgb(54, 80, 43);
+}
+
+.subtitle {
+    font-size: 1.7em;
+    text-align: center;
+    color: rgb(16, 58, 87);
+}
+
+.main-profile {
+    margin: 30px 5px 50px 0px; /*top right bottom left*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-profile img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(58, 62, 71, 0.648);
+} 
+
+.zoom-img {
+    transition: transform 0.3s ease;
+    /* smooth animation */
+}
+
+.zoom-img:hover {
+    transform: scale(1.025);
+    /* zoom in by 5% */
+}
+
+.main-profile-text {
+    margin: 10px;
+    margin-left: 15px;
+    max-width: 600px;
+    min-width: 250px;
+    font-size: 1.2em;
+    word-spacing: 3px;
+    line-height: 1.2em;
+    text-align: justify;
+}
+
+a.contact-me {
+    font-size: 25px;
+    text-decoration: none;
+    font-family: "Karla", sans-serif;
+    padding: 80px;
+    display: block;
+    /* now text-align works */
+    text-align: center;
+    font-weight: bold;
+}
+
+/* about.html */
+
+
+
+.banner-img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+/* > div means - "any direct child div inside .storyline" */
+.storyline>div {
+    width: 60%; /* or any value like 600px */
+    max-width: 70%;
+    margin: 30px auto; /* space between div (storylines) and centers the div horizontally */
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* light background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(91, 94, 103, 0.31);
+    /* soft shadow */
+}
+
+.storyline>div>p {
+    font-size: 1.025em;
+    line-height: 20px;
+    text-align: justify;
+    
+}
+
+.storyline>div img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto 15px; /* center image and add space below */
+    box-shadow: 0 2px 8px rgb(173, 178, 194);
+}
+
+
+/* contact.html */
+
+.programmer-profile {
+    display: flex;
+    /* Make the image and intro side by side */
+    flex-direction: row-reverse;
+    /* Image on the right */
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 100px;
+    padding: 10px;
+}
+
+.profile-pic {
+    flex-shrink: 0;
+    /* Prevent the image from shrinking */
+    padding: 10px;
+}
+
+.profile-pic img {
+    width: 500px;
+    border-radius: 30% 70% 20% 30%;
+}
+
+.programmer-intro {
+    padding-left: 100px;
+    font-size: 1.7em;
+    margin-top: 170px;
+    max-width: 50%;
+}
