@@ -1,0 +1,131 @@
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+
+
+div.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.card p {
+  text-align: justify;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+
+
+.card {
+  display: inline-block;
+  width: 45%;
+}
+
+div.left.card {
+  float: left;
+}
+
+div.right.card {
+  float: right;
+}
+
+.tile-image {
+  float: left;
+  margin-right: 50px;
+  width: 300px;
+}
+
+@media (max-width: 480px) {
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .tile-image {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto 20px auto;
+  }
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  
+}
+
+@media (min-width: 480px) and (max-width: 680px) {
+  
+  .card {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+  .card img {
+    margin-bottom: 10px;
+    width: 100%;
+    margin-left: auto; /*fixed the center of the img*/
+    height: 200px;
+    display: block;
+    object-fit: cover;
+  }
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+
+}
+
+@media (min-width: 680px) and (max-width: 1200px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tile-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+  }
+ 
+  h1 {
+    font-size: 4.5rem;
+  }
+}

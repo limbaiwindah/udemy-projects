@@ -1,0 +1,26 @@
+/* Write your code here: */
+
+/*group selector*/
+h1, h2 {
+    color: blueviolet;
+}
+
+/*child selector*/
+.box > p {
+    color: firebrick;
+}
+
+/*descendant selector*/
+.box li { /* as long as the ancestor (.box) have a descendant (li) then it will be a valid selector to style the list items (li)*/
+    color: blue;
+}
+
+/*chain selector*/
+li.done {
+    color: seagreen;
+}
+
+
+ul p.done {
+    font-size: 0.5rem;
+}
